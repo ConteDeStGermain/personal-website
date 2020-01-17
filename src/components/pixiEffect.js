@@ -4,14 +4,15 @@ import originalJPG from '../images/original.jpg';
 import imgMap from '../images/map.jpg';
 
 export function pixiEffect(isInitialRender, setRenderState ) {
-
-    var renderArea = document.getElementById('pixiRenderArea');
-
     if (isInitialRender) { 
         setRenderState(false);
 
-        let app = new PIXI.Application({width: window.innerWidth, height: window.innerHeight, view: renderArea});
-        // document.body.appendChild(app.view);
+        var renderArea = document.getElementById('pixiRenderArea');
+
+        let app = new PIXI.Application({
+            width: window.innerWidth, 
+            height: window.innerHeight, 
+            view: renderArea});
 
         var picWidth = window.innerWidth;
         var picHeight = (1067 * picWidth)/1600;

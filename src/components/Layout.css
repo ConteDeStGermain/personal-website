@@ -1,0 +1,26 @@
+#canvasSegment {
+    margin-top: 0;
+    padding: 0;
+    border: 0;
+}
+
+#titleContainer {
+    position: absolute;
+    width: 100%;
+    left: 3%;
+    top: 42%;
+}
+
+#titleText {
+    font-size: 5em;
+    opacity: 0.8;
+}
+
+.ui.segment.layoutSegment {
+    margin: 0;
+}
+
+.ui.inverted.button.hireMeButton {
+    border-radius: 3px;
+
+}
