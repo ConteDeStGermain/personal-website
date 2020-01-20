@@ -1,0 +1,47 @@
+.ui.inverted.segment.headerSegment {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+#desktopMenu {
+    border: 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#desktopLogo {
+    margin: 0 auto;
+}
+
+#mobileSidebarIcon{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .ui.inverted.segment.headerSegment {
+        width: 100%;
+        position: relative;
+        background-color: #1A1C1D;
+        margin-bottom: 0;
+        border-radius: 0;
+
+    }
+
+    #desktopMenu {
+        display: none;
+    }
+
+    #desktopLogo {
+        margin-left: 16.7em;
+    }
+
+    #mobileSidebarIcon{
+        display: inline;
+        float: right;
+        margin-top: 0.7em;
+        margin-right: 0.7em;
+    }
+
+}

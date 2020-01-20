@@ -1,0 +1,14 @@
+.ui.segment.layoutSegment {
+    margin: 0;
+}
+
+.ui.inverted.button.hireMeButton {
+    border-radius: 2px;
+    color: #FFF !important;
+    border-color: #FFFF00 !important;
+}   
+
+.ui.inverted.button.hireMeButton:hover {
+    color: #424242 !important;
+    background-color:#FFFF00 !important;
+}  

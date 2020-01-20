@@ -1,0 +1,40 @@
+#canvasSegment {
+    margin-top: 0;
+    padding: 0;
+    border: 0;
+}
+
+#titleContainer {
+    position: absolute;
+    width: 100%;
+    left: 3%;
+    top: 42%;
+}
+
+#titleText {
+    font-size: 5em;
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 768px) {
+    #pixiRenderArea {
+        display: none;
+    }
+
+    #canvasSegment {
+        background-image: url('../images/original.jpg');
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #titleContainer {
+        top: 28%;
+    }
+
+    #titleText {
+        font-size: 4em;
+        opacity: 1;
+    }
+
+}

@@ -1,0 +1,28 @@
+#textContainer{
+    margin-top: 10em;
+}
+
+#myPassionSegment{
+    background-color: #F7F7FF;
+    height: 110vh;
+}
+
+#textColumn {
+    height: 30em;
+}
+
+@media only screen and (max-width: 768px) {
+    #textContainer{
+        margin-top: 0;
+        font-size: 1.7em;
+    }
+
+    #myPassionSegment{
+        height: 170vh;
+    }
+
+    #textColumn{
+        height: 60em;
+    }
+
+}
