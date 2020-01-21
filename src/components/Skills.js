@@ -4,7 +4,7 @@ import { Segment, Header, Container, Button, Grid, List, Divider } from 'semanti
 import '../componentsCSS/Layout.css';
 import '../componentsCSS/Skills.css';
 
-const Skills = () => {
+const Skills = ({ height, width }) => {
     return (
         <Segment 
             attached inverted className='layoutSegment' id='skillsSegment'>
@@ -34,7 +34,7 @@ const Skills = () => {
                 </Grid>
             <Divider vertical hidden>
                 <Button 
-                    size={window.innerWidth <= 768 ? 'huge' : 'large'}
+                    size={width <= 768 ? 'huge' : 'large'}
                     inverted color='yellow' className='hireMeButton'>
                     Let's talk now!
                 </Button>

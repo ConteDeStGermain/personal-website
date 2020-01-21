@@ -4,7 +4,7 @@ import { Menu, Segment, Grid, Icon } from 'semantic-ui-react';
 import '../componentsCSS/Layout.css';
 import '../componentsCSS/Footer.css';
 
-const Footer = () => {
+const Footer = ({ width }) => {
     return (
         <Segment 
             attached='bottom' inverted className='layoutSegment'
@@ -26,10 +26,10 @@ const Footer = () => {
                         <Grid.Column verticalAlign='middle'>
                             <Icon 
                                 name='linkedin alternate' 
-                                size={window.innerWidth <= 768 ? 'big' : 'large'}/>
+                                size={width <= 768 ? 'big' : 'large'}/>
                             <Icon 
                                 name='mail' 
-                                size={window.innerWidth <= 768 ? 'big' : 'large'}/>
+                                size={width <= 768 ? 'big' : 'large'}/>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>

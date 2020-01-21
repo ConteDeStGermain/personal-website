@@ -3,23 +3,23 @@ import * as PIXI from 'pixi.js';
 import originalJPG from '../images/original.jpg';
 import imgMap from '../images/map.jpg';
 
-export function pixiEffect(isInitialRender, setRenderState ) {
+export function pixiEffect(isInitialRender, setRenderState, height, width ) {
     if (isInitialRender) { 
         setRenderState(false);
 
         var renderArea = document.getElementById('pixiRenderArea');
 
         let app = new PIXI.Application({
-            width: window.innerWidth, 
-            height: window.innerHeight, 
+            width: width, 
+            height: height, 
             view: renderArea});
 
-        var picWidth = window.innerWidth;
+        var picWidth = width;
         var picHeight = (1067 * picWidth)/1600;
         var xAxis = 0;
         var yAxis = 0;  
 
-        if (picHeight < window.innerHeight) {
+        if (picHeight < height) {
             picWidth += 300;
             xAxis += 0.09;
             yAxis += 0.02;
@@ -54,8 +54,8 @@ export function pixiEffect(isInitialRender, setRenderState ) {
             // console.log(e)
             // console.log(displacementFilter.scale.y)
             
-            displacementFilter.scale.x = (window.innerWidth /2 - e.clientX)  /20;
-            displacementFilter.scale.y = (window.innerHeight /2 - e.clientY) /20;
+            displacementFilter.scale.x = (width /2 - e.clientX)  /20;
+            displacementFilter.scale.y = (height /2 - e.clientY) /20;
         };
     }// if  
 };

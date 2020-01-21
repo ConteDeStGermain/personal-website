@@ -8,7 +8,6 @@ const HeaderMenu = () => {
     const [activeItem, setActiveItem] = useState('home');
     const [isVisible, setVisible] = useState(false);
 
-    console.log(isVisible)
     return (
         <Segment inverted className='headerSegment'>
             <Icon 

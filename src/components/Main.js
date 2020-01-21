@@ -5,12 +5,12 @@ import { pixiEffect } from './pixiEffect.js';
 import '../componentsCSS/Main.css';
 import '../componentsCSS/Layout.css';
 
-const Main = () => {
+const Main = ({ height, width }) => {
     const [isInitialRender, setRenderState] = useState(true);
 
     useEffect(() => {
         // Calling pixi effect here to be able to have the canvas appear in segment
-        pixiEffect(isInitialRender, setRenderState);
+        pixiEffect(isInitialRender, setRenderState, height, width);
     })  
 
     
@@ -19,13 +19,13 @@ const Main = () => {
             <Container textAlign='left' id='titleContainer'> 
                 <Header inverted id='titleText'>
                     Iustin Tapuc,<br/>
-                    Fron-End React Developper
+                    Front-End React Developer
                 </Header> 
                 <Button inverted size='huge' color='yellow' className='hireMeButton'>
                     Tell Me About Your Project
                 </Button>
             </Container>
-            <canvas id='pixiRenderArea' width={window.innerWidth} height={window.innerHeight}></canvas>
+            <canvas id='pixiRenderArea' width={width} height={height}></canvas>
         </Segment>
     )
 }

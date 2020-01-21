@@ -1,9 +1,9 @@
 import React from 'react';
 
-import DesktopLayout from './DesktopLayout.js';
+import Layout from './Layout.js';
 
 const App = () => {
-    return <DesktopLayout />
+    return <Layout />
 }
 
 export default App;

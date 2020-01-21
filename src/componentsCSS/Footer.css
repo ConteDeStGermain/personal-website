@@ -1,3 +1,7 @@
+#footerText{
+    font-size: 1.7em;
+}
+
 @media only screen and (max-width: 768px) {
     #footerText{
         font-size: 1.7em;
