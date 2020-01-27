@@ -35,14 +35,14 @@ const HeaderMenu = () => {
                 onHide={() => setVisible(false)}
                 vertical
                 visible={isVisible}
-                width='wide'
+                width='thin'
                 id='mobileMenu'>
 
                 <Menu.Item 
                     name='Resume'  active={activeItem === 'resume'} as='h1' 
                     onClick={() => {setActiveItem('resume'); setVisible(false)}}/>
                 <Menu.Item 
-                    name='About' active={activeItem === 'about'} as='h1' style={{ marginTop: 14 }}
+                    name='About' active={activeItem === 'about'} as='h1' 
                     onClick={() => {setActiveItem('about'); setVisible(false)}}/>
                 <Menu.Item 
                     name='Contact' active={activeItem === 'Contact'} as='h1' style={{ color:'#FFFF00' }}

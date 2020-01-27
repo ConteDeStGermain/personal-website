@@ -4,25 +4,27 @@ import Fade from 'react-reveal/Fade';
 
 import '../componentsCSS/Layout.css';
 import '../componentsCSS/MyPassion.css';
-import valuesImg from '../images/values.jpeg';
+import valuesImg from '../images/myPic.jpg';
 
 const MyPassion = () => {
+
     return (
         <Segment 
             attached className='layoutSegment' id='myPassionSegment'>
-            <Grid stackable relaxed='very' divided style={{ height: '100%' }}>
+            <Grid stackable relaxed='very' divided id='grid'>
+            
                 <Grid.Row verticalAlign='middle' columns={2}>
                     <Grid.Column>
                         <Fade>
-                            <Image centered src={valuesImg} style={{ height: '45em', width: '30em' }} />
+                            <Image centered src={valuesImg} id='image' />
                         </Fade>
                     </Grid.Column>
 
-                    <Grid.Column id='textColumn'>
+                    <Grid.Column>
                         <Fade>
                             <Container text id='textContainer'>
-                                <Header>My passion and focus is React development</Header>
-                                <p>
+                                <h2 id='h2'>My passion and focus is <br /> React development</h2>
+                                <p id='text'>
                                 Let's be honest and cut through the 
                                 marketing fluff. You need a website that 
                                 looks amazing and actually works. 

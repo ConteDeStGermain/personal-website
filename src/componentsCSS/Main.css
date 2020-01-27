@@ -6,14 +6,29 @@
 
 #titleContainer {
     position: absolute;
-    width: 100%;
+    width: 95%;
     left: 3%;
     top: 42%;
 }
 
 #titleText {
     font-size: 5em;
+    color: white;
 }
+
+#invertedBtn {
+    border-radius: 2px;
+    color: #FFF !important;
+    border-color: #eac734 !important;
+    border: solid 2px;
+    box-shadow: none !important;
+}   
+
+#invertedBtn:hover {
+    color: #424242 !important;
+    background-color:#eac734 !important;
+    box-shadow: none !important;
+}  
 
 @media only screen and (max-width: 768px) {
     #pixiRenderArea {
@@ -27,12 +42,11 @@
         background-size: cover;
     }
 
-    #titleContainer {
-        top: 28%;
+    #titleText {
+        font-size: 1.9em;
+        margin-bottom: 20px;
     }
 
-    #titleText {
-        font-size: 4em;
-    }
+  
 
 }

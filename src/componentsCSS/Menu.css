@@ -5,6 +5,11 @@
     z-index: 1;
 }
 
+.item {
+    margin: 0;
+    text-align: center;
+}
+
 #desktopMenu {
     border: 0;
     width: fit-content;
@@ -13,6 +18,7 @@
 
 #desktopLogo {
     margin: 0 auto;
+
 }
 
 #mobileSidebarIcon{
@@ -34,7 +40,7 @@
     }
 
     #desktopLogo {
-        margin-left: 50%;
+        margin-left: 40vw;
     }
 
     #mobileSidebarIcon{

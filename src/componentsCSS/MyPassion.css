@@ -1,25 +1,40 @@
-#textContainer{
-    margin-top: 10em;
-}
-
 #myPassionSegment{
-    background-color: #F7F7FF;
-    height: 110vh;
+    height: 105vh;
 }
 
-#textColumn {
-    height: 30em;
+#text {
+    font-size: 0.7em !important;
+    text-align: justify;
+}
+
+#h2 {
+    font-size: 2em;
+}
+
+#image {
+    height: 45em;
+    width: 30em;
+    object-fit: cover;
+}
+
+#grid {
+    width: 100%;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
-    #textContainer{
-        margin-top: 0;
-        font-size: 1.7em;
+   
+    #image {
+        height: 30em;
+        width: 20em;
+    }
+
+    #h2 {
+        font-size: 1.3em;
     }
 
     #myPassionSegment{
-        height: 170vh;
-    }
-
+        height: 100%;
+    }    
 
 }

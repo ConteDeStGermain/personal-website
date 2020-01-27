@@ -17,11 +17,11 @@ const Main = ({ height, width }) => {
     return (
         <Segment attached='top' style={{ height: window.innerHeight }} id='canvasSegment'>
             <Container textAlign='left' id='titleContainer'> 
-                <Header inverted id='titleText'>
+                <h1  id='titleText'>
                     Iustin Tapuc,<br/>
-                    Front-End React Developer
-                </Header> 
-                <Button inverted size='huge' color='yellow' className='hireMeButton'>
+                    <span id='testing'>Front-End React Developer</span>
+                </h1> 
+                <Button inverted size='huge' id='invertedBtn'>
                     Tell Me About Your Project
                 </Button>
             </Container>

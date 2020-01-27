@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
 .ui.segment.layoutSegment {
     margin: 0;
+    border: none !important;
 }
 
-.ui.inverted.button.hireMeButton {
-    border-radius: 2px;
-    color: #FFF !important;
-    border-color: #FFFF00 !important;
-}   
+.ui {
+    font-family: 'Muli', sans-serif !important;
+}
 
-.ui.inverted.button.hireMeButton:hover {
-    color: #424242 !important;
-    background-color:#FFFF00 !important;
-}  
+body {
+    background-color: #1A1C1D !important;
+}
