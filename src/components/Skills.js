@@ -25,8 +25,8 @@ const Skills = () => {
                         <Grid.Column>
                             <Container text>
                                 <div id='mobileFontSize'>
-                                    <label for='learnedSkills'>Learned Skills</label>
-                                    <ul id='learnedSkills'>
+                                    <h2 class='skillsH2'>Learned Skills:</h2>
+                                    <ul id='skillsList'>
                                         <li>React.js & Javascript (web)</li>
                                         <li>Java (software development)</li>
                                         <li>Ui Design</li>
@@ -38,8 +38,8 @@ const Skills = () => {
                         <Grid.Column>
                             <Container text>
                                 <div id='mobileFontSize'>
-                                    <label for='nowLearning'>Currently learning</label>
-                                    <ul id='nowLearning'>
+                                    <h2 class='skillsH2'>Currently learning:</h2>
+                                    <ul>
                                         <li>GraphQL, with Node.js and Appolo (Back-end)</li>
                                     </ul>
                                 </div>

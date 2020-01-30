@@ -9,16 +9,12 @@
     font-size: 3em ;
 }
 
-#fixedResume:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.bottomNavigation {
+    font-weight: 700 !important;
 }
 
-#fixedAbout:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-#fixedContact:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.bottomNavigation:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .ui.grid {

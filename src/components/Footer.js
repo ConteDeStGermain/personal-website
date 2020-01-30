@@ -19,9 +19,12 @@ const Footer = ({ width }) => {
 
                     <Grid.Row centered style={{ padding: 0 }}>
                         <Menu inverted secondary>
-                            <Menu.Item name='RESUME' id='fixedResume'/>
-                            <Menu.Item name='ABOUT' id='fixedAbout'/>
-                            <Menu.Item name='CONTACT' style={{ color: '#eac734' }} id='fixedContact'/>
+                            <Menu.Item name='RESUME' className='bottomNavigation'/>
+                            <Menu.Item name='ABOUT'  className='bottomNavigation'/>
+                            <Menu.Item 
+                                name='CONTACT' 
+                                style={{ color: '#eac734' }} 
+                                className='bottomNavigation'/>
                         </Menu>
                     </Grid.Row>
 

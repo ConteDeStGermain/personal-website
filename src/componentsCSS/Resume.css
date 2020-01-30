@@ -1,0 +1,61 @@
+#resumeSegment {
+    height: auto;
+}
+
+#grid {
+    height: 75%;
+    position: relative;
+}
+
+.resumeSkills {
+    font-size: 1.35em;
+    height: 100%;
+}
+
+.resumeUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.resumeLi {
+    margin-bottom: 7px;
+}
+
+.categoryLabel {
+    font-size: 4em;
+    font-weight: 300;
+}
+
+.label {
+    color: #e3c030;
+    font-size: 1.6em;
+}
+
+.years {
+    color: black;
+    font-size: 0.8em;
+}
+
+.p {
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    #grid {
+        height: 100%;
+        margin-top: 0vh;
+    }
+    
+    #resumeSegment {
+        height: 370vh;
+    }
+
+    .resumeSkills {
+        height: auto;
+    }
+    
+    .resumeUl {
+        text-align: center;
+    }
+}

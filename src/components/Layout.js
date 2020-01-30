@@ -17,10 +17,11 @@ const DesktopLayout = () => {
     );
 
     
+    
     return (
         <div>  
             <HeaderMenu />
-            <Main height={dimensions.height} width={dimensions.width} />
+            <Main height={dimensions.height} width={dimensions.width}/>
             <MyPassion />
             <Skills height={dimensions.height} width={dimensions.width} /> 
             <Footer height={dimensions.height} width={dimensions.width} />

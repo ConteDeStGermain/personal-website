@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Segment, Header, Container, Button } from 'semantic-ui-react';
+import { Segment, Container, Button } from 'semantic-ui-react';
 
 import { pixiEffect } from './pixiEffect.js';
 import '../componentsCSS/Main.css';

@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap');
 
 
-.ui.segment.layoutSegment {
-    margin: 0;
+.ui.segment {
+    margin: 0 !important;
     border: none !important;
 }
 
