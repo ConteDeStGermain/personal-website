@@ -11,30 +11,27 @@
     font-size: 2em;
 }
 
-#image {
-    height: 45em;
-    width: 30em;
-    object-fit: cover;
-}
-
-#grid {
+#passionGrid {
+    height: auto;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 @media only screen and (max-width: 768px) {
-   
-    #image {
-        height: 30em;
-        width: 20em;
-    }
-
     #h2 {
         font-size: 1.3em;
     }
 
     #myPassionSegment{
-        height: 100%;
+        height: auto;
     }    
+
+    #passionGrid {
+        top: 0;
+        transform: none;
+    }
 
 }

@@ -12,9 +12,9 @@ const Skills = () => {
 
                     <Grid.Row centered>
                         <Grid.Column textAlign='center'>
-                            <h1 id='segmentTitle'>As an avid learner, I am mostly self thought.</h1>
+                            <h1 id='segmentTitle'>As an avid learner, I am mostly self taught.</h1>
                             <p id='p'>
-                                Thanks to Udemy, I have thought myself multiple technologies 
+                                Thanks to Udemy, I have taught myself multiple technologies 
                                 such as React.js, and the basics of Android development using Java.  
                                 Below is a sample of what I have learned, and what I am currently learning:
                             </p>
@@ -26,7 +26,7 @@ const Skills = () => {
                             <Container text>
                                 <div id='mobileFontSize'>
                                     <h2 class='skillsH2'>Learned Skills:</h2>
-                                    <ul id='skillsList'>
+                                    <ul className='noBullet basicSkillsList'>
                                         <li>React.js & Javascript (web)</li>
                                         <li>Java (software development)</li>
                                         <li>Ui Design</li>
@@ -38,14 +38,29 @@ const Skills = () => {
                         <Grid.Column>
                             <Container text>
                                 <div id='mobileFontSize'>
-                                    <h2 class='skillsH2'>Currently learning:</h2>
-                                    <ul>
+                                    <h2 className='skillsH2'>Currently learning:</h2>
+                                    <ul className='noBullet'>
                                         <li>GraphQL, with Node.js and Appolo (Back-end)</li>
+                                        <li>Techniques of Search Engine Optimization (SEO)</li>
                                     </ul>
                                 </div>
                             </Container>
                         </Grid.Column>
                     </Grid.Row>
+                
+                    <Grid.Row centered>
+                        <Grid.Column verticalAlign='middle'>
+                            <Button 
+                                size='large' 
+                                inverted 
+                                id='invertedBtn'
+                                onClick={() => window.location = 'mailto:itapuc7@gmail.com'}
+                            >
+                                Reach me today
+                            </Button>
+                        </Grid.Column>
+                    </Grid.Row>
+                
                 </Grid>
         
         </Segment>
@@ -53,8 +68,3 @@ const Skills = () => {
 }
 
 export default Skills;
-
-// <Button 
-//                     size={width <= 768 ? 'huge' : 'large'} id='notInvertedBtn'>
-//                     Let's talk now!
-//                 </Button>

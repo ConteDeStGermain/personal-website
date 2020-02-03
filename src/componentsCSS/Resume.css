@@ -2,9 +2,10 @@
     height: auto;
 }
 
-#grid {
-    height: 75%;
-    position: relative;
+#resumeGrid {
+    height: auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 .resumeSkills {
@@ -42,20 +43,12 @@
 }
 
 @media only screen and (max-width: 768px) {
-    #grid {
-        height: 100%;
-        margin-top: 0vh;
-    }
-    
-    #resumeSegment {
-        height: 370vh;
-    }
 
     .resumeSkills {
         height: auto;
     }
     
     .resumeUl {
-        text-align: center;
+        text-align: left;
     }
 }

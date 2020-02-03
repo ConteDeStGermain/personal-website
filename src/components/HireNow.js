@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Segment, Button, Grid } from 'semantic-ui-react';
 
-import '../componentsCSS/ResumeHireNow.css';
+import '../componentsCSS/HireNow.css';
 
-const Resume = () => {
+const HireNow = ({ description }) => {
 
     return (
         <div>  
@@ -14,19 +14,23 @@ const Resume = () => {
 
                     <Grid.Row centered columns='3'>
                         <Grid.Column textAlign='center' width='8'>
-                            <h1 id='hireNowTitle'>Hire a Expert React developer today!</h1>
+                            <h1 id='hireNowTitle'>Hire a React developer today!</h1>
                             <p id='p'>
-                                Now that you know what I've done 
-                                and what I could do for you, feel free to reach out 
-                                and start a conversation. I always enjoy speaking with passionate 
-                                business owners about their needs.
+                                {description}
                             </p>
                         </Grid.Column>
                     </Grid.Row>
 
                     <Grid.Row centered>
-                        <Grid.Column verticalAlign='center'>
-                            <Button size='large' inverted id='invertedBtn'>Reach me today</Button>
+                        <Grid.Column verticalAlign='middle'>
+                            <Button 
+                                size='large' 
+                                inverted 
+                                id='invertedBtn'
+                                onClick={() => window.location = 'mailto:itapuc7@gmail.com'}
+                            >
+                                Reach me today
+                            </Button>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
@@ -37,4 +41,4 @@ const Resume = () => {
 
 }
 
-export default Resume;
+export default HireNow;

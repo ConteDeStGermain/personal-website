@@ -1,13 +1,16 @@
 import React from "react";
-
-import App from "../components/App.js";
-
+import Layout from "../components/Layout.js";
+import MyPassion from '../components/MyPassion.js';
+import Skills from '../components/Skills.js';
 import 'semantic-ui-css/semantic.min.css'
 
-
-
 const IndexPage = () => {
-  return <App />
+  return (
+    <Layout>
+      <MyPassion />
+      <Skills height={window.innerHeight} width={window.innerWidth} /> 
+    </Layout>
+  )
 };
 
 export default IndexPage

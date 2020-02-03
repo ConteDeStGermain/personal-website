@@ -1,41 +1,64 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Segment, Grid, Image, Container } from 'semantic-ui-react';
 import Fade from 'react-reveal/Fade';
-
-import ResumeHireNow from './ResumeHireNow.js';
-
 import '../componentsCSS/Layout.css';
 import '../componentsCSS/About.css';
 
-import valuesImg from '../images/myPic.jpg';
+import adventure from '../images/adventure.jpeg';
+import books from '../images/books.jpg';
 
-const DesktopLayout = () => {
-    
+const About = () => {
+    let screenWidth = window.innerWidth;
+
+    let aboutImageL = (
+        <Fade left>
+            <Image centered src={adventure} className='imageStyling' />
+        </Fade>
+    );
+
+    let aboutImageR = (
+        <Fade right>
+            <Image centered src={books} className='imageStyling' />
+        </Fade>
+    );
+
+    let aboutDescriptionL = ( 
+        <Container text textAlign='left'>
+            <h2 id='h2'>Exploration and Adventure!</h2>
+            <p id='text'>
+                Be it going on hikes or wandering through forgotten ruins, I love the sense of adventure!
+                There is a special fuzzy feeling I feel when I walk up a mountain and start feeling a 
+                cool wind on my face, only to look behind me and be in awe of the beautiful landscape
+                that lies in front of me.
+            </p>
+        </Container>
+    );
+
+    let aboutDescriptionR = (
+        <Container text textAlign={screenWidth <= 768 ? 'left' : 'right'}>
+            <h2 id='h2'>I love personal <br /> development litterature</h2>
+            <p id='text'>
+               I was recently introducted to the world of audio books and personal development novels.
+               As someone who believes that there is always room for improvement, I think the right
+               self-help book can set you on the right path. To those interested, I strongly reccomend
+               Mastery by the excellent Robert Greene, and Ego is the Enemy by Ryan Holiday.
+            </p>
+        </Container>
+    );
     
     return (
         <div>  
-            <Segment class='layoutSegment'>
+            <Segment className='layoutSegment' id='aboutSegemnt'>
                 <Grid stackable id='aboutGrid'>
                     <Grid.Row columns='4'>
                         <Grid.Column width='1'></Grid.Column>
+
                         <Grid.Column verticalAlign='middle' width='8'>
-                            <Container text textAlign='right'>
-                                <h2 id='h2'>My passion and focus is <br /> React development</h2>
-                                <p id='text'>
-                                    Let's be honest and cut through the 
-                                    marketing fluff. You need a website that 
-                                    looks amazing and actually works. 
-                                    Bottom line, that's what I do. 
-                                    And if you want to learn more about working with me, 
-                                    pick up the phone and give me a call (or email).
-                                </p>
-                            </Container>
+                            {screenWidth <= 768 ? aboutImageR : aboutDescriptionR}
                         </Grid.Column>
 
                         <Grid.Column width='5'>
-                            <Fade right>
-                                <Image centered src={valuesImg} id='image' />
-                            </Fade>
+                        {screenWidth <= 768 ? aboutDescriptionR : aboutImageR}
                         </Grid.Column>
 
                         <Grid.Column width='1'></Grid.Column>
@@ -45,23 +68,11 @@ const DesktopLayout = () => {
                         <Grid.Column width='1'></Grid.Column>
 
                         <Grid.Column width='5'>
-                            <Fade left>
-                                <Image centered src={valuesImg} id='image' />
-                            </Fade>
+                            {aboutImageL}
                         </Grid.Column>
 
                         <Grid.Column verticalAlign='middle' width='8'>
-                            <Container text textAlign='left'>
-                                <h2 id='h2'>My passion and focus is <br /> React development</h2>
-                                <p id='text'>
-                                    Let's be honest and cut through the 
-                                    marketing fluff. You need a website that 
-                                    looks amazing and actually works. 
-                                    Bottom line, that's what I do. 
-                                    And if you want to learn more about working with me, 
-                                    pick up the phone and give me a call (or email).
-                                </p>
-                            </Container>
+                            {aboutDescriptionL}
                         </Grid.Column>
 
                         <Grid.Column width='1'></Grid.Column>
@@ -69,11 +80,11 @@ const DesktopLayout = () => {
 
                 </Grid>
             </Segment>
-
-            <ResumeHireNow />    
         </div>
     )
 
 }
 
-export default DesktopLayout;
+export default About;
+
+

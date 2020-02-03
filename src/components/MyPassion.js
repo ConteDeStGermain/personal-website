@@ -11,26 +11,24 @@ const MyPassion = () => {
     return (
         <Segment 
             attached className='layoutSegment' id='myPassionSegment'>
-            <Grid stackable relaxed='very' divided id='grid'>
+            <Grid stackable relaxed='very' divided id='passionGrid'>
             
                 <Grid.Row verticalAlign='middle' columns={2}>
                     <Grid.Column>
                         <Fade>
-                            <Image centered src={valuesImg} id='image' />
+                            <Image centered src={valuesImg} className='imageStyling' id='image' />
                         </Fade>
                     </Grid.Column>
 
                     <Grid.Column>
                         <Fade>
                             <Container text id='textContainer'>
-                                <h2 id='h2'>My passion and focus is <br /> React development</h2>
+                                <h2 id='h2'>I am a dedicated React developer</h2>
                                 <p id='text'>
-                                Let's be honest and cut through the 
-                                marketing fluff. You need a website that 
-                                looks amazing and actually works. 
-                                Bottom line, that's what I do. 
-                                And if you want to learn more about working with me, 
-                                pick up the phone and give me a call (or email).
+                                    As a front-end developer, I am in the business of creating
+                                    reliable websites that look clean and work smoothly. If you are
+                                    in need of such talent, don't 
+                                    hesitate to reach me through email, Linkedin, or Twitter.
                                 </p>
                             </Container>
                         </Fade>
