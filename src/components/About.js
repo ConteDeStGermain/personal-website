@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Segment, Grid, Image, Container } from 'semantic-ui-react';
 import Fade from 'react-reveal/Fade';
 import '../componentsCSS/Layout.css';
@@ -8,8 +8,21 @@ import adventure from '../images/adventure.jpeg';
 import books from '../images/books.jpg';
 
 const About = () => {
-    let screenWidth = window.innerWidth;
+    const [screenWidth, setScreenWidth] = useState(769)
+    const [textPosition, setTextPosition] = useState(null)
+    // let screenWidth = 769;
+    // let textPosition;
 
+    // Required for proper compilation of Gatsby build
+    useEffect(() => {
+        if(typeof window !== `undefined`){
+            setScreenWidth(window.innerWidth);
+            setTextPosition(window.innerWidth <= 768 ? 'left' : 'right');
+        }
+    }, [])
+    
+    
+    
     let aboutImageL = (
         <Fade left>
             <Image centered src={adventure} className='imageStyling' />
@@ -27,15 +40,17 @@ const About = () => {
             <h2 id='h2'>Exploration and Adventure!</h2>
             <p id='text'>
                 Be it going on hikes or wandering through forgotten ruins, I love the sense of adventure!
-                There is a special fuzzy feeling I feel when I walk up a mountain and start feeling a 
+                There is a special feeling I get when I walk up a mountain and start feeling a 
                 cool wind on my face, only to look behind me and be in awe of the beautiful landscape
-                that lies in front of me.
+                that lies below.
             </p>
         </Container>
     );
 
+    console.log('asdf')
+    
     let aboutDescriptionR = (
-        <Container text textAlign={screenWidth <= 768 ? 'left' : 'right'}>
+        <Container text textAlign={textPosition}>
             <h2 id='h2'>I love personal <br /> development litterature</h2>
             <p id='text'>
                I was recently introducted to the world of audio books and personal development novels.
@@ -45,7 +60,7 @@ const About = () => {
             </p>
         </Container>
     );
-    
+
     return (
         <div>  
             <Segment className='layoutSegment' id='aboutSegemnt'>
@@ -54,11 +69,11 @@ const About = () => {
                         <Grid.Column width='1'></Grid.Column>
 
                         <Grid.Column verticalAlign='middle' width='8'>
-                            {screenWidth <= 768 ? aboutImageR : aboutDescriptionR}
+                            {screenWidth <= 768 ? aboutImageR : aboutDescriptionR} 
                         </Grid.Column>
 
                         <Grid.Column width='5'>
-                        {screenWidth <= 768 ? aboutDescriptionR : aboutImageR}
+                            {screenWidth <= 768 ? aboutDescriptionR : aboutImageR}
                         </Grid.Column>
 
                         <Grid.Column width='1'></Grid.Column>

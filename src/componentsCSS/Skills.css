@@ -1,5 +1,5 @@
 #skillsSegment{
-    height: 70vh;
+    height: auto;
     background-color: #1A1C1D ;
     padding: 0;
 }
@@ -7,11 +7,8 @@
 #skillsGrid{
     height: auto;
     width: 100%;
-    margin: 0;
-
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 
@@ -38,16 +35,13 @@
 
 #p {
     font-size: 1.1em;
-    width: 75%;
+    width: 60%;
     margin: 0 auto;
     text-align: justify;
 }
 
 
 @media only screen and (max-width: 768px) {
-    #skillsSegment{
-        height: 105vh;
-    }
 
     #segmentTitle {
         font-size: 2em;
@@ -60,6 +54,10 @@
 
     .noBullet {
         list-style-type: disc;
+    }
+
+    #p {
+        width: 80%;
     }
     
 }

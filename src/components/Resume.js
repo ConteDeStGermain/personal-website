@@ -3,14 +3,16 @@ import { Segment, Grid } from 'semantic-ui-react';
 import '../componentsCSS/Resume.css';
 
 const Resume = () => {
-    const [dimensions, setDimensions] = useState(
-        {
-            height: window.innerHeight,
-            width: window.innerWidth
-        }
-    );
+    let height = 0;
+    let width = 0;
+    
+    // Required for proper compilation of Gatsby build
+    if(typeof window !== `undefined`) {
+      height = window.innerHeight;
+      width = window.innerWidth;
+    }
 
-    let textPositioning = dimensions.width <= 768 ? 'left' : 'right'; 
+    let textPositioning = width <= 768 ? 'left' : 'right'; 
 
     const generateExperience = ( title, years, description ) => {
         return (
@@ -21,7 +23,7 @@ const Resume = () => {
                         <span class='years'>{years}</span>
                     </h2>
                 </Grid.Column>
-                <Grid.Column style={{ fontSize: '1.35em', height: '100%' }}>
+                <Grid.Column style={{ fontSize: '1.35em', height: '100%' }} width={6}>
                         <p class='p'>
                             {description}
                         </p>

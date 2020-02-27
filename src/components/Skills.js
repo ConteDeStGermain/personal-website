@@ -11,7 +11,7 @@ const Skills = () => {
                 <Grid stackable columns={2} id='skillsGrid' verticalAlign='middle'>
 
                     <Grid.Row centered>
-                        <Grid.Column textAlign='center'>
+                        <Grid.Column textAlign='center' width={10}>
                             <h1 id='segmentTitle'>As an avid learner, I am mostly self taught.</h1>
                             <p id='p'>
                                 Thanks to Udemy, I have taught myself multiple technologies 

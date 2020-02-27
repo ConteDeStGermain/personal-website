@@ -14,10 +14,17 @@
     margin-bottom: 5em;
 }
 
+#hireNowDescription {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
 @media only screen and (max-width: 768px) {
     #hireNowTitle {
-        font-weight: 300;
-        font-size: 2.5em;
+        font-weight: 600 !important;
+        font-size: 1.7em;
     }
 
     #hireNowSegment {
@@ -28,6 +35,10 @@
     #hireNowGrid {
         margin-top: 2.5em;
         margin-bottom: 2.5em;
+    }
+
+    #hireNowDescription {
+        width: 90%;
     }
 
 }

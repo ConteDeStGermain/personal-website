@@ -16,8 +16,8 @@ body {
 
 .imageStyling {
     border-radius: 6px;
-    height: 40em;
-    width: 28em;
+    height: 35em;
+    width: 25em;
     object-fit: cover;
 }
 

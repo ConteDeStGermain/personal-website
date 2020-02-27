@@ -24,6 +24,12 @@ const HeaderMenu = () => {
 
             {/* Desktop Menu Hidden on Mobile */}
             <Menu inverted pointing secondary id='desktopMenu'>
+                <Menu.Item as={Link}
+                    name='Home'
+                    activeClassName='active'
+                    to='/' 
+                    style={{ marginRight: '10px' }}
+                />
                 <Menu.Item
                     as={Link}
                     name='resume'
@@ -50,6 +56,12 @@ const HeaderMenu = () => {
                 visible={isVisible}
                 width='thin'
                 id='mobileMenu'> 
+                <Menu.Item as={Link}
+                    name='Home'
+                    activeClassName='active'
+                    to='/' 
+                    className='mobileItem'
+                />
 
                 <Menu.Item 
                     name='Resume' 

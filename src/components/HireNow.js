@@ -13,9 +13,9 @@ const HireNow = ({ description }) => {
                 <Grid stackable id='hireNowGrid' verticalAlign='middle'>
 
                     <Grid.Row centered columns='3'>
-                        <Grid.Column textAlign='center' width='8'>
+                        <Grid.Column textAlign='center' width={9}>
                             <h1 id='hireNowTitle'>Hire a React developer today!</h1>
-                            <p id='p'>
+                            <p id='hireNowDescription'>
                                 {description}
                             </p>
                         </Grid.Column>

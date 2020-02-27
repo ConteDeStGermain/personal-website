@@ -20,7 +20,7 @@ const MyPassion = () => {
                         </Fade>
                     </Grid.Column>
 
-                    <Grid.Column>
+                    <Grid.Column width={7}>
                         <Fade>
                             <Container text id='textContainer'>
                                 <h2 id='h2'>I am a dedicated React developer</h2>

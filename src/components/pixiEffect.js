@@ -1,11 +1,14 @@
-import * as PIXI from 'pixi.js';
-
-import originalJPG from '../images/original.jpg';
-import imgMap from '../images/map.jpg';
+import originalJPG from '../images/test_original.png';
+import imgMap from '../images/test_map.png';
 
 export function pixiEffect(height, width ) {
-    var renderArea = document.getElementById('pixiRenderArea');
+    // Required for proper compilation of Gatsby build
+    if (window === undefined) return {}
 
+    const PIXI = require('pixi.js');
+    
+    var renderArea = document.getElementById('pixiRenderArea');
+    
     let app = new PIXI.Application({
         width: width, 
         height: height, 
@@ -41,20 +44,23 @@ export function pixiEffect(height, width ) {
     let displacementFilter = new PIXI.filters.DisplacementFilter(depthMap);
     app.stage.filters = [displacementFilter];
 
+    if(typeof window !== `undefined`) {
+        window.onmousemove = function(e) {
+            // var distX = e.clientX - displacementFilter.scale.x;
+            // var distY = e.clientY - displacementFilter.scale.y;
 
-    window.onmousemove = function(e) {
-        // var distX = e.clientX - displacementFilter.scale.x;
-        // var distY = e.clientY - displacementFilter.scale.y;
+            // displacementFilter.scale.x += (distX * 0.03)
+            // displacementFilter.scale.y += (distY * 0.03)
 
-        // displacementFilter.scale.x += (distX * 0.03)
-        // displacementFilter.scale.y += (distY * 0.03)
-
-        // console.log(e)
-        // console.log(displacementFilter.scale.y)
-        
-        displacementFilter.scale.x = (width /2 - e.clientX)  /20;
-        displacementFilter.scale.y = (height /2 - e.clientY) /20;
+            // console.log(e)
+            // console.log(displacementFilter.scale.y)
+            
+            displacementFilter.scale.x = (width /2 - e.clientX)  /95;
+            displacementFilter.scale.y = (height /2 - e.clientY)  /95;
+        };
     };
 
     return app;
+
+    
 };

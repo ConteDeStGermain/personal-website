@@ -7,43 +7,21 @@ import Footer from './Footer.js';
 import '../componentsCSS/Layout.css';
 
 const Layout = (props) => {
-    const [dimensions, setDimensions] = useState(
-        {
-            height: window.innerHeight,
-            width: window.innerWidth
-        }
-    );
+    let height;
+    let width;
 
-    var pageName = props.children[0].type.name;
-    var title;
-
-    if (pageName === 'MyPassion') {
-        title = (
-            <h1  id='titleText'>
-                Iustin Tapuc,<br/>
-                <span id='testing'>Front-End React Developer</span>
-            </h1> 
-        )
-    } else if (pageName === 'Resume') {
-        title = (
-            <h1 id='titleText'>
-                My abilites, in-depth.
-            </h1>
-        )
-    } else (
-        title = (
-            <h1 id='titleText'>
-                Things I enjoy in life.
-            </h1>
-        )
-    )
+    // Required for proper compilation of Gatsby build
+    if(typeof window !== `undefined`){
+        height = window.innerHeight;
+        width = window.innerWidth;
+    }
 
     return (
         <div>  
             <HeaderMenu />
-            <Main height={dimensions.height} width={dimensions.width} pageTitle={title} />
+            <Main height={height} width={width} pageTitle={props.title} />
                 { props.children }
-            <Footer height={dimensions.height} width={dimensions.width} />
+            <Footer height={height} width={width} />
         </div>
     )
 

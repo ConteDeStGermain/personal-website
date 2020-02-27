@@ -13,7 +13,6 @@ const Main = ({ height, width, pageTitle }) => {
     useEffect(() => {
         // Calling pixi effect here to be able to have the canvas appear in segment
         pixieApp.current = pixiEffect(height, width);
-
         return () => {
                 if (pixieApp.current !== null) {
                     pixieApp.current.destroy();
@@ -24,7 +23,7 @@ const Main = ({ height, width, pageTitle }) => {
     
     return (
         <Fade>
-            <Segment attached='top' style={{ height: window.innerHeight }} id='canvasSegment'>
+            <Segment attached='top' id='canvasSegment'>
                 <Container textAlign='left' id='titleContainer'> 
                     {pageTitle}
                     <Button 
