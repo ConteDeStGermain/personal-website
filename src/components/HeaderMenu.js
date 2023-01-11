@@ -16,11 +16,6 @@ const HeaderMenu = () => {
                 name='sidebar' id='mobileSidebarIcon' 
                 onClick={() => setVisible(true)}
             />
-        
-
-            <Link to='/'>
-                <Image src={logo}  size='mini'  id='logo' />
-            </Link>
 
             {/* Desktop Menu Hidden on Mobile */}
             <Menu inverted pointing secondary id='desktopMenu'>

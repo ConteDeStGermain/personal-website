@@ -14,19 +14,22 @@
 
 .ui.text.container {
     width: fit-content;
-    font-size: 1.6em !important;
+    font-size: 1.35em !important;
    
 }
 
 .skillsH2 {
-    font-weight: bold;
-    vertical-align: top;
-    color: #e3c030;
+  font-weight: bold;
+  vertical-align: top;
+  color: #e3c030;
+  margin-bottom: none;
 }
 
 
 .noBullet {
     list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
 }
 
 #segmentTitle {
@@ -34,30 +37,32 @@
 }
 
 #p {
-    font-size: 1.1em;
-    width: 60%;
+    font-size: 1.35em;
     margin: 0 auto;
     text-align: justify;
+}
+
+#mobileFontSize {
+  text-align: center;
 }
 
 
 @media only screen and (max-width: 768px) {
 
     #segmentTitle {
-        font-size: 2em;
-
+      font-size: 2em;
     }
 
     #mobileFontSize{
-        font-size: 0.9em;
+      font-size: 0.9em;
     }
 
     .noBullet {
-        list-style-type: disc;
+      list-style-type: none;
     }
 
     #p {
-        width: 80%;
+      width: 80%;
     }
     
 }

@@ -18,7 +18,7 @@ const IndexPage = () => {
   var title = (
     <h1  id='titleText'>
       Iustin Tapuc,<br/>
-      <span id='testing'>Front-End React Developer</span>
+      <span id='testing'>Software Developer</span>
     </h1> 
   );
 
@@ -26,7 +26,7 @@ const IndexPage = () => {
     <div>
       <Helmet>
           <meta charSet="utf-8" />
-          <title>A passionate Front-end developer</title>
+          <title>Iustin Tapuc - Software Developer</title>
       </Helmet>
       <Layout title={title}>
         <MyPassion />

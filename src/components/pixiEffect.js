@@ -1,5 +1,5 @@
-import originalJPG from '../images/test_original.png';
-import imgMap from '../images/test_map.png';
+import originalJPG from '../images/bg-pic-yellow.png';
+import imgMap from '../images/bg_map.png';
 
 export function pixiEffect(height, width ) {
     // Required for proper compilation of Gatsby build

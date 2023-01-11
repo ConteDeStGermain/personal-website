@@ -12,7 +12,7 @@ const AboutIndex = () => {
 
     var title = (
         <h1 id='titleText'>
-            Things I enjoy in life.
+            Things I enjoy.
         </h1>
     )
 
@@ -20,7 +20,7 @@ const AboutIndex = () => {
         <div>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>More about me</title>
+                <title>Iustin Tapuc - Software Developer: About</title>
             </Helmet>
             <Layout title={title}>
                 <About />

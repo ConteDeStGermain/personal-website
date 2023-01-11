@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Segment, Container, Button } from 'semantic-ui-react';
 import Fade from 'react-reveal/Fade';
 
-import { pixiEffect } from './pixiEffect.js';
+import { pixiEffect } from './pixiEffect';
 import '../componentsCSS/Main.css';
 import '../componentsCSS/Layout.css';
 

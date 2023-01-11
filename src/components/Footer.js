@@ -46,7 +46,7 @@ const Footer = ({ width }) => {
                             <Icon 
                                 name='github square' 
                                 size={width <= 768 ? 'big' : 'large'}
-                                onClick={() => window.open('https://github.com/ConteDeSanGermain')}
+                                onClick={() => window.open('https://github.com/ConteDeStGermain')}
                             />
                             <Icon 
                                 name='twitter square' 

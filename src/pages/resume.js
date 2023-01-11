@@ -20,7 +20,7 @@ const ResumePage = () => {
         <div>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Front-end dev focused on React</title>
+                <title>Iustin Tapuc - Software Developer: Resume</title>
             </Helmet>
             <Layout title={title} >
                 <Resume/>

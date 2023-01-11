@@ -23,11 +23,12 @@ const MyPassion = () => {
                     <Grid.Column width={7}>
                         <Fade>
                             <Container text id='textContainer'>
-                                <h2 id='h2'>I am a dedicated React developer</h2>
+                                <h2 id='h2'>I am a software developer with a passion for tech.</h2>
                                 <p id='text'>
-                                    As a front-end developer, I am in the business of creating
-                                    reliable websites that look clean and work smoothly. If you are
-                                    in need of such talent, don't 
+                                    I look forward to work on software that will propel us towards the Jetsons' 
+                                    version of the future. As such, I like writing reliable code that works
+                                    well. And in the case of the front-end of websites, I enjoy making these web
+                                    pages look clean and work smoothly. If you are in need of such talent, don't 
                                     hesitate to reach me through email, Linkedin, or Twitter.
                                 </p>
                             </Container>

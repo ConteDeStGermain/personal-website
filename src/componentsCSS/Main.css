@@ -39,7 +39,7 @@
     }
 
     #canvasSegment {
-        background-image: url('../images/test_original.png') ;
+        background-image: url('../images/bg-pic-yellow.png') ;
         background-position: center;
         background-size: cover;
     }

@@ -14,7 +14,7 @@ const HireNow = ({ description }) => {
 
                     <Grid.Row centered columns='3'>
                         <Grid.Column textAlign='center' width={9}>
-                            <h1 id='hireNowTitle'>Hire a React developer today!</h1>
+                            <h1 id='hireNowTitle'>Hire me today!</h1>
                             <p id='hireNowDescription'>
                                 {description}
                             </p>

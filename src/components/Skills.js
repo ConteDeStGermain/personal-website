@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Header, Container, Button, Grid, List, Divider } from 'semantic-ui-react';
+import { Segment, Container, Button, Grid  } from 'semantic-ui-react';
 
 import '../componentsCSS/Layout.css';
 import '../componentsCSS/Skills.css';
@@ -12,10 +12,11 @@ const Skills = () => {
 
                     <Grid.Row centered>
                         <Grid.Column textAlign='center' width={10}>
-                            <h1 id='segmentTitle'>As an avid learner, I am mostly self taught.</h1>
+                            <h1 id='segmentTitle'>I enjoy learning, and taught myself a lot.</h1>
                             <p id='p'>
                                 Thanks to Udemy, I have taught myself multiple technologies 
-                                such as React.js, and the basics of Android development using Java.  
+                                such as React.js, and the basics of Android development using Java.
+                                I am also currently studying at the university of Ottawa in Computer Science.  
                                 Below is a sample of what I have learned, and what I am currently learning:
                             </p>
                         </Grid.Column>
@@ -29,7 +30,6 @@ const Skills = () => {
                                     <ul className='noBullet basicSkillsList'>
                                         <li>React.js & Javascript (web)</li>
                                         <li>Java (software development)</li>
-                                        <li>Ui Design</li>
                                     </ul>
                                 </div>
                             </Container>
@@ -40,7 +40,7 @@ const Skills = () => {
                                 <div id='mobileFontSize'>
                                     <h2 className='skillsH2'>Currently learning:</h2>
                                     <ul className='noBullet'>
-                                        <li>GraphQL, with Node.js and Appolo (Back-end)</li>
+                                        <li>Better ui design</li>
                                         <li>Techniques of Search Engine Optimization (SEO)</li>
                                     </ul>
                                 </div>

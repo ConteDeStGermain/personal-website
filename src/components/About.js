@@ -46,8 +46,6 @@ const About = () => {
             </p>
         </Container>
     );
-
-    console.log('asdf')
     
     let aboutDescriptionR = (
         <Container text textAlign={textPosition}>
